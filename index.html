@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/03/05/test/">test</a>
+      <a class="p-name article-title" href="/2025/03/05/test/">香橙派配置VNC服务器桌面(ubuntu20.04)</a>
     </h1>
   
 
@@ -93,12 +93,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>welcome to my blog,and i will test my page or blog something.</p>
+        <h2 id="1-安装x11VNC"><a href="#1-安装x11VNC" class="headerlink" title="1. 安装x11VNC"></a>1. 安装x11VNC</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update -y</span><br><span class="line">apt-get install x11vnc -y</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-设置VNC服务器密码"><a href="#2-设置VNC服务器密码" class="headerlink" title="2.设置VNC服务器密码"></a>2.设置VNC服务器密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x11vnc -storepasswd</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-启动server"><a href="#3-启动server" class="headerlink" title="3.启动server"></a>3.启动server</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x11vnc -forever -shared -rfbauth ~/.vnc/passwd</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/03/05/test/" data-id="cm7vh0wn60001fws60u2j0tj1" data-title="test" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2025/03/05/test/" data-id="cm7vhx9ow0001mns6298p0tc9" data-title="香橙派配置VNC服务器桌面(ubuntu20.04)" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -149,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/03/05/hello-world/" data-id="cm7vh0wn20000fws64boa9yrr" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2025/03/05/hello-world/" data-id="cm7vhx9oq0000mns6aep91pvi" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -192,7 +196,7 @@
       <ul>
         
           <li>
-            <a href="/2025/03/05/test/">test</a>
+            <a href="/2025/03/05/test/">香橙派配置VNC服务器桌面(ubuntu20.04)</a>
           </li>
         
           <li>
