@@ -25,12 +25,11 @@
 
   
 
-<link rel="canonical" href="http://example.com/2025/03/05/test/">
+<link rel="canonical" href="http://example.com/tags/">
 
 
 
-  <title>
-香橙派配置VNC服务器桌面(ubuntu20.04) |
+  <title>全部标签 |
 wang = xjtu-wang's blog</title>
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,19 +57,8 @@ wang = xjtu-wang's blog</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">香橙派配置VNC服务器桌面(ubuntu20.04)
+  <h1 itemprop="name headline">全部标签
   </h1>
-  
-<div class="meta">
-  <span class="item" title="创建时间：2025-03-05 13:15:01">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2025-03-05T13:15:01+08:00">2025-03-05</time>
-  </span>
-</div>
-
 
           </div>
         </div>
@@ -100,12 +88,12 @@ wang = xjtu-wang's blog</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -126,114 +114,12 @@ wang = xjtu-wang's blog</title>
       <div class="inner">
         <div id="main" class="pjax">
           
-  <div class="article wrap">
-    
-<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-<i class="ic i-home"></i>
-<span><a href="/">首页</a></span>
-</div>
-
-    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/05/test/">
-
-  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="//cdn.jsdelivr.net/gh/xjtu-wang/xjtu-wang.github.io@latest/images/avatar.jpg">
-    <meta itemprop="name" content="wang">
-    <meta itemprop="description" content=", ">
-  </span>
-
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="xjtu-wang's blog">
-  </span>
-
-  <div class="body md" itemprop="articleBody">
-    
-
-    <h2 id="1-安装x11VNC"><a href="#1-安装x11VNC" class="headerlink" title="1. 安装x11VNC"></a>1. 安装x11VNC</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update -y</span><br><span class="line">apt-get install x11vnc -y</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-设置VNC服务器密码"><a href="#2-设置VNC服务器密码" class="headerlink" title="2.设置VNC服务器密码"></a>2.设置VNC服务器密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x11vnc -storepasswd</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-启动server"><a href="#3-启动server" class="headerlink" title="3.启动server"></a>3.启动server</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x11vnc -forever -shared -rfbauth ~/.vnc/passwd</span><br></pre></td></tr></table></figure>
-
-  </div>
-
-   <footer>
-
-    <div class="meta">
-  <span class="item">
-    <span class="icon">
-      <i class="ic i-calendar-check"></i>
-    </span>
-    <span class="text">更新于</span>
-    <time title="修改时间：2025-03-05 13:43:46" itemprop="dateModified" datetime="2025-03-05T13:43:46+08:00">2025-03-05</time>
-  </span>
-</div>
-
-      
-<div class="reward">
-  <button><i class="ic i-heartbeat"></i> 赞赏</button>
-  <p>请我喝[茶]~(￣▽￣)~*</p>
-  <div id="qr">
-      
-      <div>
-        <img data-src="//cdn.jsdelivr.net/gh/xjtu-wang/xjtu-wang.github.io@latest/images/wechatpay.png" alt="wang 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div>
-        <img data-src="//cdn.jsdelivr.net/gh/xjtu-wang/xjtu-wang.github.io@latest/images/alipay.png" alt="wang 支付宝">
-        <p>支付宝</p>
-      </div>
-      
-      <div>
-        <img data-src="//cdn.jsdelivr.net/gh/xjtu-wang/xjtu-wang.github.io@latest/images/paypal.png" alt="wang 贝宝">
-        <p>贝宝</p>
+  <div class="collapse wrap">
+      <h2 class="item title"><a href="/">首页</a> <small>/</small> 暂无标签</h2>
+      <div class="tag cloud">
+        
       </div>
   </div>
-</div>
-
-      
-
-<div id="copyright">
-<ul>
-  <li class="author">
-    <strong>本文作者： </strong>wang <i class="ic i-at"><em>@</em></i>xjtu-wang's blog
-  </li>
-  <li class="link">
-    <strong>本文链接：</strong>
-    <a href="http://example.com/2025/03/05/test/" title="香橙派配置VNC服务器桌面(ubuntu20.04)">http://example.com/2025/03/05/test/</a>
-  </li>
-  <li class="license">
-    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-  </footer>
-
-</article>
-
-  </div>
-  
-
-<div class="post-nav">
-    <div class="item left">
-      
-
-  <a href="/2025/03/05/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclize41wj20zk0m87gk.jpg" title="Hello World">
-  <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Hello World</h3>
-  </a>
-
-    </div>
-    <div class="item right">
-    </div>
-</div>
-
-  
-  <div class="wrap" id="comments"></div>
-
 
         </div>
         <div id="sidebar">
@@ -244,7 +130,6 @@ wang = xjtu-wang's blog</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85x11VNC"><span class="toc-number">1.</span> <span class="toc-text">1. 安装x11VNC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%AE%BE%E7%BD%AEVNC%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AF%86%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">2.设置VNC服务器密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%90%AF%E5%8A%A8server"><span class="toc-number">3.</span> <span class="toc-text">3.启动server</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -311,7 +196,7 @@ wang = xjtu-wang's blog</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2025/03/05/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2025/03/05/test/" title="香橙派配置VNC服务器桌面(ubuntu20.04)">香橙派配置VNC服务器桌面(ubuntu20.04)</a></span>
   </li>
 
       
@@ -320,7 +205,7 @@ wang = xjtu-wang's blog</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2025/03/05/test/" title="香橙派配置VNC服务器桌面(ubuntu20.04)">香橙派配置VNC服务器桌面(ubuntu20.04)</a></span>
+    <span><a href="/2025/03/05/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
   </ul>
@@ -351,7 +236,7 @@ wang = xjtu-wang's blog</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '2025/03/05/test/',
+    path: 'tags/',
     favicon: {
       show: "（●´3｀●）やれやれだぜ",
       hide: "(´Д｀)大変だ！"
